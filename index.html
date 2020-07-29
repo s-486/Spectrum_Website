@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectrum</title>
+
+    <!----------------Font Styles--------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+
+
+
+    <!-----------------------------CSS FILES------------------>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!----------------AOS------------------>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+    <!-- ---------------------------------------BOOTSTRAP----------------------------- -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    <div class="banner" id="home">
+        <header>
+            <a href="#" class="logo">Spectrum</a>
+            <div class="toggle-collapse">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="./index.html">Home</a>
+                        <a href="./about_us.html">About Us</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Team</a>
+                        <a href="#">Contact us</a>
+
+                    </div>
+                </div>
+
+                <div class="toggle-icons" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+
+                <script>
+
+                    function openNav() {
+                        document.getElementById("myNav")
+                            .style.height = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav")
+                            .style.height = "0%";
+                    }
+
+                </script>
+
+            </div>
+
+            <div class="mid-nav">
+                <ul class="nav-items">
+                    <li class="nav-link current">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about">About Us</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#testimonial">Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Team</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">FAQ</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <img src="./assets/bg1.jpg">
+
+    </div>
+
+    <!-----------------------About Us------------------->
+    <section class="about" id="about">
+        <div class="contentBx">
+            <h2 class="heading" data-aos="fade-up">About Us</h2>
+            <p class="text" data-aos="fade-up" data-aos-delay="300"><b>SPECTRUM</b> ipsum dolor sit amet consectetur
+                adipisicing elit. Libero amet totam mollitia dolorum eligendi ullam. Accusantium vero repellendus sit
+                est cumque, sequi nobis libero expedita quas, magnam dolor asperiores culpa recusandae modi incidunt,
+                vitae earum excepturi id amet quaerat nemo quasi odio nisi! Ea, obcaecati velit dolorum provident
+                pariatur quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus fuga sit aut eius
+                voluptatem assumenda. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam consequatur magnam
+                animi maiores aperiam, veniam quod ratione eaque dolores aliquid?
+            </p>
+        </div>
+        <div class="imgBx">
+            <img src="./assets/About_us.png">
+        </div>
+    </section>
+
+
+    <!-- ----------------------------------------WINGS---------------------------------------------------- -->
+    <section class="wings">
+
+        <div class="contentBx">
+            <h1>Our Wings</h1>
+
+        </div>
+
+        <div class="subCont" data-aos="fade-up" data-aos-delay="300">
+            <p>Our club <b>SPECTRUM</b> is so named as it provides us with different wings emitted by the hardwork from
+                our members, showing homologous transitions between Hardware, Software and Designing.
+                The <b>HARDWARE</b> team of the Club mainly focuses on VLSI, Embedded Systems and PCB Design. We have
+                developed many projects with implementation and testing of circuits, components, systems, etc.
+                The <b>SOFTWARE</b> team is continuously striving for growth in the domains of Web Development, App
+                Development, Competitive Programming, Machine Learning and Data Science. Working as a team, inspiring
+                each other we quickly develop viable solutions for a better outcome.
+                The <b>DESIGN</b> Wing of our Club has proven their creativity in UI/UX Poster Designing. We believe
+                visual
+                communication is a major tool to enhance various creative projects.
+            </p>
+        </div>
+
+        <ul class="ch-grid" data-aos="fade-up" data-aos-delay="400">
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-1"></div>
+                        <div class="ch-info-back">
+                            <p>VLSI</p>
+                            <p>EMBEDDED SYSTEM</p>
+                            <p>PCB DESIGN</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-2"></div>
+                        <div class="ch-info-back">
+                            <p>COMPETITIVE PROGRAMMING</p>
+                            <p>WEB DEVELOPMENT</p>
+                            <p>APP DEVELOPMENT</p>
+                            <p>MACHINE LEARNING</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-3"></div>
+                        <div class="ch-info-back">
+                            <p>UI/UX DESIGNING</p>
+                            <p>POSTER DESIGNING</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+
+
+    <!-- ---------------------------------------------FOOTER----------- -->
+    <footer class="page-footer bg-dark">
+        <div class="tab">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-github text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+                <div class="first-row col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">SPECTRUM</h6>
+                    <hr class=" mb-2 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px">
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur dolor repudiandae, cum quis accusamus blanditiis est exercitationem dignissimos autem cumque?Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, sit! Lorem ipsum </p>
+                </div>
+
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">WINGS</h6>
+                    <hr class=" mb-2 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px">
+                    <ul class="list-unstyled">
+                        <li class="my-2">HARDWARE</li>
+                        <li class="my-2">SOFTWARE</li>
+                        <li class="my-2">DESIGN</li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">USEFUL LINKS</h6>
+                    <hr class=" mb-2 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px">
+
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#">HOME</a></li>
+                        <li class="my-2"><a href="#">ABOUT US</a></li>
+                        <li class="my-2"><a href="#">PROJECTS</a></li>
+                        <li class="my-2"><a href="#">BLOGS</a></li>
+                        <li class="my-2"><a href="#">FAQ</a></li>
+
+
+                    </ul>
+                </div>    
+
+                <div class="fourth-row col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">CONTACTS</h6>
+                    <hr class=" mb-2 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px">
+
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home"> College Of Engineering And Technology, Ghatikia, Bhubaneswar - 751003</i></li>
+                        <li class="my-2"><i class="fas fa-envelope"> spectrumcet@gmail.com</i></li>
+                        <li class="my-2"><i class="fas fa-phone"> +91-9999999999</i></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <p>&copy;
+                <a href="#">spectrumcet.com</a>
+            </p>
+            <p>Designed By Web-Team Spectrum</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------------JS FILES------------------------->
+    <script src="./js/observers.js"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <!-- -------------------------------------BOOTSTRAP------------- -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+
+
+</body>
+
+</html>
