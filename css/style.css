@@ -342,7 +342,7 @@ ul{
 
 }
 
-.ch-grid {
+.wings .ch-grid {
 	margin: 0 0 0 0;
 	padding: 0;
 	list-style: none;
@@ -351,24 +351,24 @@ ul{
 	width: 100%;
 }
 
-.ch-grid:after,
+.wings .ch-grid:after,
 .ch-item:before {
 	content: '';
     display: table;
 }
 
-.ch-grid:after {
+.wings .ch-grid:after {
 	clear: both;
 }
 
-.ch-grid li {
+.wings .ch-grid li {
 	width: 220px;
 	height: 220px;
 	display: inline-block;
 	margin: 50px;
 }
 
-.ch-item {
+.wings .ch-item {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -380,7 +380,7 @@ ul{
 	-ms-perspective: 900px;
 	perspective: 900px;
 }
-.ch-info{
+.wings .ch-info{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -395,7 +395,7 @@ ul{
   
   
 }
-.ch-info > div {
+.wings .ch-info > div {
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -414,11 +414,11 @@ ul{
 	transform-origin: 50% 0%;
 }
 
-.ch-info .ch-info-front {
+.wings .ch-info .ch-info-front {
 	box-shadow: inset 0 0 0 10px rgb(0,0,0);
 }
 
-.ch-info .ch-info-back {
+.wings .ch-info .ch-info-back {
 	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
@@ -428,7 +428,7 @@ ul{
 	opacity: 0;
 }
 
-.ch-img-1 { 
+.wings .ch-img-1 { 
   background: url(../assets/hardware\ \(W\).png);
   background-size: cover;
   background-position: center;
@@ -437,13 +437,13 @@ ul{
 
 
 
-.ch-img-2 { 
+.wings .ch-img-2 { 
   background-image: url(../assets/software\ \(W\).png);
   background-size: cover;
   background-position: center;
 }
 
-.ch-img-3 { 
+.wings .ch-img-3 { 
   background-image: url(../assets/design\ \(W\).png);
   background-size: cover;
   background-position: center;
@@ -451,7 +451,7 @@ ul{
 
 
 
-.ch-info p {
+.wings .ch-info p {
   
 	color: #fff;
 	padding: 10px 5px;
@@ -466,7 +466,7 @@ ul{
 
 
 
-.ch-item:hover .ch-info-front {
+.wings .ch-item:hover .ch-info-front {
 	-webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
 	-moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
 	-o-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
@@ -475,7 +475,7 @@ ul{
 	opacity: 0;
 }
 
-.ch-item:hover .ch-info-back {
+.wings .ch-item:hover .ch-info-back {
 	-webkit-transform: rotate3d(1,0,0,0deg);
 	-moz-transform: rotate3d(1,0,0,0deg);
 	-o-transform: rotate3d(1,0,0,0deg);
@@ -484,11 +484,238 @@ ul{
 	opacity: 1;
 }
 
+/*--------------------------------------------------------- Events--------------------------------------------------- */
+.events{
+  position: relative;
+  width: 100%;
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 1.3px;
+}
+
+.events .contentBx {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 50px;
+  text-align: center;
+  align-items: center;
+  float: center;
+  
+  background: linear-gradient(135deg, rgba(138, 11, 241) 0%, rgba(27, 17, 29) 100%) center no-repeat fixed;
+}
+
+.events .contentBx h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Abel', sans-serif;
+}
+.events .card{
+  width:18em !important;
+}
+
+.events .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 18.7em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #111;
+}
+
+.events .card:hover .cover {
+  opacity: 0.9;
+}
+
+
+.events .title {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .events .card{
+      display: inline-block !important;
+  }
+  .events .col-md-4{
+      margin-top: 30px !important;
+  }
+}
+
+/*--------------------------------------------------------------- Blogs--------------------------------------------------- */
+
+.blogs{
+  position: relative;
+  width: 100%;
+}
+
+.blogs .contentBx {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 50px;
+  text-align: center;
+  align-items: center;
+  float: center;
+  
+  background: linear-gradient(135deg, rgba(138, 11, 241) 0%, rgba(27, 17, 29) 100%) center no-repeat fixed;
+}
+
+.blogs .contentBx h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Abel', sans-serif;
+}
+.blogs .btn-card{
+      background-color: #FF6611;
+      color: #fff;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+.blogs .btn-card:hover {
+    background-color: #ffffff;
+    color: #FF6611;
+    border: 1px solid #FF6611;
+}
+.blogs a.btn-card {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Alumni */
+
+.alumni{
+  position: relative;
+  width: 100%;
+}
+
+.alumni .contentBx {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 50px;
+  text-align: center;
+  align-items: center;
+  float: center;
+  
+  background: linear-gradient(135deg, rgba(138, 11, 241) 0%, rgba(27, 17, 29) 100%) center no-repeat fixed;
+}
+
+.alumni .contentBx h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Abel', sans-serif;
+}
+
+/* ---------------------------------------------------------------FAQ------------------------------------------------- */
+
+.faq{
+  position: relative;
+  width: 100%;
+  display: flex;
+  
+}
+
+.faq .contentBx{
+  background: #fff;
+  padding: 50px 20px;
+  width: 60%;
+  align-items: center;
+  
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 1.3px;
+}
+
+.faq .contentBx .heading{
+  color: #111;
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 1.5px;
+
+  padding-bottom: 8px;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
 
 
 
 
 
+.faq .imgBx{
+  /* background: url(../assets/About_us.png); */
+  width: 40%;
+  /* background-size: cover; */
+  /* background-position: center; */
+  
+
+}
+
+.faq .imgBx img{
+  width: 90%;
+}
+
+
+.faq .collapsible-link {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.faq .collapsible-link::before {
+  content: '\f107';
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  display: block;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.1rem;
+}
+
+.faq .collapsible-link[aria-expanded='true']::before {
+  content: '\f106';
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------- Footer------------------------------------------- */
 
 footer{
   letter-spacing: 1.3px;
@@ -584,9 +811,44 @@ footer .first-row p{
   }
   
   
-  .ch-grid li {
+  .wings .ch-grid li {
     width: 260px;
     height: 260px;
+  }
+
+
+  .blogs .row{
+    padding: 10px 100px;
+    
+  }
+
+
+  /* ---------------FAQ------------------ */
+  .faq{
+    flex-direction: column;
+  }
+
+  .faq .contentBx{
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: justify;
+    align-items: center;
+    float: center;
+
+  }
+
+
+  .faq .imgBx{
+    width: 100%;
+    padding: 20px;
+    min-height: 400px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .faq .imgBx img{
+    width: 100%;
   }
 
 }
