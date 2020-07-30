@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-
-
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 
 
     <!-----------------------------CSS FILES------------------>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/glider.css" />
 
     <!----------------AOS------------------>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -38,6 +37,18 @@
 </head>
 
 <body>
+
+    <!-- -----------------------------------------------------ICON BAR----------------------------- -->
+    <div class="icon-bar">
+        <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g text-white"></i></a>
+        <a href="#"><i class="fab fa-github text-white"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+        <a href="#"><i class="fab fa-instagram text-white"></i></a> 
+    </div>
+
+
+
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
     <div class="banner" id="home">
         <header>
@@ -100,7 +111,7 @@
                 </ul>
             </div>
         </header>
-        <img src="./assets/main.png">
+        <img class="img-fluid" src="./assets/main.png">
 
     </div>
 
@@ -188,8 +199,10 @@
 
     <!-- ============================ Events ================================= -->
     <section class="events" id="events">
-        <div class="contentBx">
-            <h1>Events</h1>
+        <div class="contentBx" data-aos="fade-up" data-aos-delay="300">
+            <h1 >Events</h1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, magnam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, commodi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, vitae.</p>
+            <hr class=" mb-2 mt-0 d-inline-block mx-auto" style="width: 400px ; height: 5px">
         </div><br>
 
         <div class="container" class="subCont" data-aos="fade-up" data-aos-delay="300">
@@ -210,7 +223,7 @@
                     </div>
                 </div>
                 <!-- Event 2 -->
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center ">
                     <div class="card">
                         <img src="./assets/Mozilla-02.jpg" alt="" width="300" height="400">
                         <div class="cover">
@@ -246,7 +259,78 @@
 
     </section><br>
 
+
     <!-- ==================== Projects ============================== -->
+    <section class="project wings">
+        <div class="contentBx">
+            <h1>Projects</h1>
+        </div>
+        <div class="main">
+            <ul class="cards" data-aos="fade-up" data-aos-delay="300">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Project name</h2>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive Project name</p>
+                            <button class="btn card_btn">Github Link</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Project name</h2>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive Project name</p>
+                            <button class="btn card_btn">Github Link</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Project name</h2>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive Project name</p>
+                            <button class="btn card_btn">Github Link</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Project name</h2>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive Project name</p>
+                            <button class="btn card_btn">Github Link</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Project name</h2>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive Project name</p>
+                            <button class="btn card_btn">Github Link</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Project name</h2>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive Project name</p>
+                            <button class="btn card_btn">Github Link</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 
 
 
@@ -258,7 +342,7 @@
             <h1>Blogs</h1>
         </div><br>
 
-        <div class="container" class="subCont" data-aos="fade-up" data-aos-delay="300">
+        <div class="container" class="subCont" data-aos="fade-up" data-aos-delay="300" >
             <div class="row">
                 <!-- Blog 1 -->
                 <div class="col-md-4 mt-3">
@@ -324,6 +408,213 @@
         </div>
 
     </section><br>
+   
+   
+    <!-- ----------------------------------------TEAMS---------------------------------------------------- -->
+    <section class="team team-details">
+        <div class="contentBx">
+            <h1  data-aos="fade-up" data-aos-delay="300">Our Team</h1>
+           
+
+        </div>
+        <br><br>
+        <div class="subCont" data-aos="fade-up" data-aos-delay="300">
+            <div class="glider-contain">
+                <div class="glider">
+
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img src="https://spectrumcet.com/images/soumya%20bhai.jpg" alt="Avatar" class="team-image">
+                        <div class="team-overlay">
+
+                            <div class="team-text">
+                                <p>Soumya Mohanty</p>
+                                <p style="font-size: 0.5em;">Core Member</p>
+                                <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a href="#"><i class="fab fa-github text-white"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="glider-prev" style="visibility: hidden;">&laquo;</button>
+                <button class="glider-next">&raquo;</button>
+            </div>
+        </div>
+        </div>
+        <br><br><br>
+
+    </section>
     <!-- Alumni -->
 
 
@@ -348,7 +639,8 @@
                                 <h2 class="mb-0">
                                     <button type="button" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne"
-                                        class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">WHY US ?</button>
+                                        class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">WHY
+                                        US ?</button>
                                 </h2>
                             </div>
                             <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
@@ -503,7 +795,8 @@
 
     <!-------------------------------------JS FILES------------------------->
     <script src="./js/observers.js"></script>
-
+    <script src="./js/team.js"></script>
+    <script src="./js/glider.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <script>
