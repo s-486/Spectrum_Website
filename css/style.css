@@ -38,7 +38,7 @@ ul{
 }
 
 .icon-bar a:hover {
-  background-color: #DC8700;
+  background-color: #ff6611;
 }
 
 
@@ -882,10 +882,10 @@ ul{
 
 
 .glider-contain {
-  width: 100%;
-  max-width: 997px;
+  width: 100vw;
+  max-width: 1200px;
   margin: 0 auto;
-}
+  }
 .glider-contain button{
   padding: 0;
   margin: 0;
@@ -903,7 +903,7 @@ ul{
   min-height: 150px;
 }
 .team-container {
-margin: 20px;
+margin: 5px;
 position: relative;
 width: 50%;
 }
