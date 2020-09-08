@@ -48,8 +48,8 @@
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToScroll: 3,
-                        slidesToShow: 3
+                        slidesToScroll: 1,
+                        slidesToShow: 1
                     }
                 },
                 {
